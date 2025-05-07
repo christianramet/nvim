@@ -3,13 +3,12 @@ local themes = { "catppuccin-latte", "catppuccin-mocha" }
 local current = 1
 
 -- Apply a theme at startup based on terminal color support
-if vim.env.TERM == "xterm-256color" then
-	vim.cmd("colorscheme default")
-else
-	local available = vim.fn.getcompletion(themes[current], "color")
-	if vim.tbl_contains(available, themes[current]) then
-		vim.cmd.colorscheme(themes[current])
-	end
+if vim.env.TERM_PROGRAM == "iTerm.app" then
+  local theme = themes[1]
+  -- Check if the theme is available
+  if vim.fn.getcompletion(theme, "color")[1] == theme then
+    vim.cmd.colorscheme(theme)
+  end
 end
 
 -- Keybind to toggle between themes
