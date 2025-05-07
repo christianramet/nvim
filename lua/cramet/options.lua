@@ -17,6 +17,8 @@ vim.opt.cursorline = true
 vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
+vim.opt.termguicolors = true
+
 -- Tab/Space indentation settings
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 0
