@@ -1,5 +1,5 @@
 vim.opt.number = true
-vim.opt.relativenumber = true
+vim.opt.relativenumber = false
 vim.opt.mouse = "a"
 vim.opt.breakindent = true
 vim.opt.undofile = true
@@ -20,8 +20,8 @@ vim.opt.confirm = true
 vim.opt.termguicolors = true
 
 -- Tab/Space indentation settings
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 0
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
 vim.opt.expandtab = false
 
 -- Sync clipboard between OS and Neovim.
