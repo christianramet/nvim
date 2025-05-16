@@ -1,5 +1,5 @@
 -- List of themes to toggle between
-local themes = { "default", "catppuccin-latte", "catppuccin-mocha" }
+local themes = { "catppuccin-latte", "catppuccin-mocha" }
 local theme_file = vim.fn.stdpath("data") .. "/theme.txt"
 
 -- Check if a theme exists
