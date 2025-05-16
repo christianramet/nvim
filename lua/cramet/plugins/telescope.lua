@@ -4,17 +4,14 @@ return{
   enable = true,
   dependencies = {
     'nvim-lua/plenary.nvim',
-    { -- If encountering errors, see telescope-fzf-native README for installation instructions
-      'nvim-telescope/telescope-fzf-native.nvim',
+    { 'nvim-telescope/telescope-fzf-native.nvim',
       build = 'make',
       cond = function()
         return vim.fn.executable 'make' == 1
       end,
     },
-    -- { 'nvim-telescope/telescope-ui-select.nvim' },
-
-    -- Useful for getting pretty icons, but requires a Nerd Font.
-    {'nvim-tree/nvim-web-devicons'},
+    { 'nvim-telescope/telescope-ui-select.nvim' },
+    { 'nvim-tree/nvim-web-devicons' }, --requires a Nerd Font
   },
   config = function()
     --  :Telescope help_tags
